@@ -12,13 +12,27 @@ public class Main {
         Employee BiaLinda = new Employee("Bia","Linda",5463);
         Employee DoraDora = new Employee("Dora","Dora", 54637);
 
+
         EmployeeLinkedList list = new EmployeeLinkedList();
+
+        System.out.println(list.isEmpty());
+
         list.addToFront(JessyHumble);
         list.addToFront(JakeYoung);
         list.addToFront(BiaLinda);
         list.addToFront(DoraDora);
 
+        System.out.println(list.isEmpty());
+
+        System.out.println(list.getSize());
+
         list.printList();
+        //removing from the front of the list
+        list.removeFromFront();
+        System.out.println(list.getSize());
+        list.printList();
+
+      
 
     }
 }
